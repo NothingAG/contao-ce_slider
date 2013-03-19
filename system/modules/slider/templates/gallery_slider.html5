@@ -1,0 +1,19 @@
+<ul class="rslides">
+    <?php foreach ($this->body as $class=>$row): ?>
+    <?php foreach ($row as $col): ?>
+    <?php if ($col->addImage): ?>
+    <li class="<?php echo $col->class; ?>">
+        <?php if ($col->href): ?>
+        <a href="<?php echo $col->href; ?>"<?php echo $col->attributes; ?> title="<?php echo $col->alt; ?>"><img
+            src="<?php echo $col->src; ?>" alt="<?php echo $col->alt; ?>"></a>
+        <?php else: ?>
+        <img src="<?php echo $col->src; ?>" alt="<?php echo $col->alt; ?>">
+        <?php endif; ?>
+        <?php if ($col->caption): ?>
+        <p class="caption"><?php echo $col->caption; ?></p>
+        <?php endif; ?>
+    </li>
+    <?php endif; ?>
+    <?php endforeach; ?>
+    <?php endforeach; ?>
+</ul>

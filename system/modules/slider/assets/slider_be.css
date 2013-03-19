@@ -1,0 +1,10 @@
+/*
+ * Make the display of the sliders go inline
+ */
+.ce_slider .ce_gallery ul {
+  overflow:hidden;
+}
+.ce_slider li {
+  float:left;
+  margin:0 6px 6px 0;
+}
