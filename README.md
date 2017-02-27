@@ -1,3 +1,6 @@
+# [UNMAINTAINED]
+This project is not maintained anymore.
+
 # CONTAO EXTENSION: SLIDER
 A content element in Contao that allows quickly selecting several images and making a slidehow. It works similar to the Gallery content element
 but is focussed on simplicity and is responsive.
